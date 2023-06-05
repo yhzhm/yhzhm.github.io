@@ -173,9 +173,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2023-06-03 17:02:50 / Modified: 17:07:48" itemprop="dateCreated datePublished" datetime="2023-06-03T17:02:50+08:00">2023-06-03</time>
+      <time title="Created: 2023-06-03 17:02:50" itemprop="dateCreated datePublished" datetime="2023-06-03T17:02:50+08:00">2023-06-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-06-05 09:12:02" itemprop="dateModified" datetime="2023-06-05T09:12:02+08:00">2023-06-05</time>
     </span>
 
   
@@ -214,8 +220,11 @@
 <p>打开你本地的zsh配置文件，找到 plugins&#x3D; ，默认情况下，应该会已经配置了git插件，所以打开看到的是</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins=(git)</span><br></pre></td></tr></table></figure>
 
-<p>那我们只需要把上面下载的追加进去即可，插件之间用空格分隔开即可</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ZSH_THEME=&quot;agnoster&quot; #修改zsh主题</span><br><span class="line"></span><br><span class="line">plugins=(git zsh-syntax-highlighting zsh-autosuggestions)</span><br></pre></td></tr></table></figure>
+<p>那我们只需要把上面下载的插件追加进去即可，插件之间用空格分隔开</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins=(git zsh-syntax-highlighting zsh-autosuggestions)</span><br></pre></td></tr></table></figure>
+
+<p>可以换个漂亮的主题，已默认安装，只需在配置文件<code>.zshrc</code>中配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZSH_THEME=&quot;agnoster&quot; #修改zsh主题为agnoster</span><br></pre></td></tr></table></figure>
 
 <p>编辑完成后保存退出，执行下面的代码让配置生效</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.zshrc</span><br></pre></td></tr></table></figure>
